@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/carsharing-app-react/static/css/main.bb4f8c28.chunk.css",
-    "main.js": "/carsharing-app-react/static/js/main.cbd9d6fe.chunk.js",
-    "main.js.map": "/carsharing-app-react/static/js/main.cbd9d6fe.chunk.js.map",
-    "runtime-main.js": "/carsharing-app-react/static/js/runtime-main.6c96da7b.js",
-    "runtime-main.js.map": "/carsharing-app-react/static/js/runtime-main.6c96da7b.js.map",
-    "static/js/2.d50cedfa.chunk.js": "/carsharing-app-react/static/js/2.d50cedfa.chunk.js",
-    "static/js/2.d50cedfa.chunk.js.map": "/carsharing-app-react/static/js/2.d50cedfa.chunk.js.map",
-    "static/js/3.146f14ec.chunk.js": "/carsharing-app-react/static/js/3.146f14ec.chunk.js",
-    "static/js/3.146f14ec.chunk.js.map": "/carsharing-app-react/static/js/3.146f14ec.chunk.js.map",
+    "main.css": "/carsharing-app-react/static/css/main.5eccf094.chunk.css",
+    "main.js": "/carsharing-app-react/static/js/main.5b292d86.chunk.js",
+    "main.js.map": "/carsharing-app-react/static/js/main.5b292d86.chunk.js.map",
+    "runtime-main.js": "/carsharing-app-react/static/js/runtime-main.fa63957e.js",
+    "runtime-main.js.map": "/carsharing-app-react/static/js/runtime-main.fa63957e.js.map",
+    "static/js/2.01b2bf4a.chunk.js": "/carsharing-app-react/static/js/2.01b2bf4a.chunk.js",
+    "static/js/2.01b2bf4a.chunk.js.map": "/carsharing-app-react/static/js/2.01b2bf4a.chunk.js.map",
+    "static/js/3.4ad02489.chunk.js": "/carsharing-app-react/static/js/3.4ad02489.chunk.js",
+    "static/js/3.4ad02489.chunk.js.map": "/carsharing-app-react/static/js/3.4ad02489.chunk.js.map",
     "index.html": "/carsharing-app-react/index.html",
-    "static/css/main.bb4f8c28.chunk.css.map": "/carsharing-app-react/static/css/main.bb4f8c28.chunk.css.map",
-    "static/js/2.d50cedfa.chunk.js.LICENSE.txt": "/carsharing-app-react/static/js/2.d50cedfa.chunk.js.LICENSE.txt",
+    "static/css/main.5eccf094.chunk.css.map": "/carsharing-app-react/static/css/main.5eccf094.chunk.css.map",
+    "static/js/2.01b2bf4a.chunk.js.LICENSE.txt": "/carsharing-app-react/static/js/2.01b2bf4a.chunk.js.LICENSE.txt",
+    "static/media/left-arrow.1752ae91.svg": "/carsharing-app-react/static/media/left-arrow.1752ae91.svg",
     "static/media/location-icon.480be180.svg": "/carsharing-app-react/static/media/location-icon.480be180.svg",
     "static/media/menu_btn.33a03786.svg": "/carsharing-app-react/static/media/menu_btn.33a03786.svg",
     "static/media/menu_btn_close.1d4598cc.svg": "/carsharing-app-react/static/media/menu_btn_close.1d4598cc.svg",
-    "static/media/sider.scss": "/carsharing-app-react/static/media/pointer.ffdfd958.svg"
+    "static/media/slider.scss": "/carsharing-app-react/static/media/slider4.be695f13.png",
+    "static/media/right-arrow.7591c327.svg": "/carsharing-app-react/static/media/right-arrow.7591c327.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6c96da7b.js",
-    "static/js/2.d50cedfa.chunk.js",
-    "static/css/main.bb4f8c28.chunk.css",
-    "static/js/main.cbd9d6fe.chunk.js"
+    "static/js/runtime-main.fa63957e.js",
+    "static/js/2.01b2bf4a.chunk.js",
+    "static/css/main.5eccf094.chunk.css",
+    "static/js/main.5b292d86.chunk.js"
   ]
 }
