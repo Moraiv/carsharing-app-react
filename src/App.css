@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Roboto Regular"), url("../Fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Roboto-Bold"), url("../Fonts/Robotobold.ttf") format("truetype");
+}
+/* colors */
+.App {
+  display: flex;
+  cursor: url("./assets/cursor.svg"), default;
+}
+
+a {
+  cursor: url("./assets/pointer.svg"), pointer;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=App.css.map */
