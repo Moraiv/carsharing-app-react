@@ -1,0 +1,125 @@
+.content {
+  position: absolute;
+  width: 95%;
+  height: 100vh;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.content__block {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 50%;
+}
+
+.content__footer {
+  position: absolute;
+  height: 8%;
+  bottom: 0;
+  width: 50%;
+  text-align: center;
+}
+
+.content__footer-text {
+  font-size: 13px;
+  display: inline;
+  overflow: auto;
+  font-family: Robotobold, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content__footer-text_left {
+  color: #999999;
+  float: left;
+  margin-left: 10%;
+}
+
+.content__footer-text_right {
+  float: right;
+  margin-right: 10%;
+  color: #121212;
+}
+.content__footer-text_right:hover {
+  color: #0EC261;
+}
+
+.content__header {
+  width: 100%;
+  margin-top: 32px;
+  overflow: auto;
+  align-items: center;
+}
+
+.content__header-text {
+  color: #0EC261;
+  margin-left: 10%;
+  font-size: 30px;
+  font-weight: 700;
+  display: inline;
+}
+
+.content__header-location-text {
+  color: #999999;
+  display: inline;
+  font-size: 14px;
+  font-weight: 400;
+  float: right;
+  margin-right: 10%;
+}
+
+.content__header-logo {
+  position: relative;
+  right: 5px;
+  top: 4px;
+}
+
+.content__hero {
+  margin-top: 125px;
+  margin-left: 10%;
+}
+
+.content__hero-title {
+  font-family: Roboto-Bold, serif;
+  color: #121212;
+  font-weight: bold;
+  font-size: 70px;
+  margin: 0;
+  height: 66px;
+}
+
+.content__hero-name {
+  font-family: Roboto-Bold, serif;
+  color: #0EC261;
+  font-weight: bold;
+  font-size: 70px;
+  margin: 4px 0 0 0;
+  height: 66px;
+}
+
+.content__hero-subtitle {
+  font-family: Roboto, serif;
+  color: #999999;
+  font-weight: 300;
+  font-size: 26px;
+  margin: 34px 0 60px 0;
+}
+
+.content__hero-link {
+  text-decoration: none;
+  font-family: Roboto, serif;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  padding: 13px 60px;
+  background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+  background-blend-mode: darken;
+  border-radius: 8px;
+}
+.content__hero-link:hover {
+  background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+}
+
+/*# sourceMappingURL=home.css.map */
