@@ -1,8 +1,8 @@
 .content {
   position: absolute;
-  width: 95%;
-  height: 100vh;
-  margin-left: 5%;
+  width: calc(100% - 64px);
+  height: 100%;
+  margin-left: 64px;
   z-index: 1;
 }
 
@@ -110,6 +110,7 @@
   text-decoration: none;
   font-family: Roboto, serif;
   color: white;
+  border: none;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
@@ -120,6 +121,103 @@
 }
 .content__hero-link:hover {
   background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+}
+
+@media (max-width: 1439px) {
+  .content__block_first {
+    width: 60%;
+  }
+  .content__block_second {
+    width: 40%;
+  }
+  .content__footer {
+    width: 60%;
+  }
+}
+@media (max-width: 1023px) {
+  .content__block_second {
+    display: none;
+  }
+
+  .content__block_first {
+    width: 100%;
+  }
+
+  .content__footer {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+  .content__header {
+    margin-top: 17px;
+    margin-left: 26px;
+    width: calc(100% - 26px);
+  }
+  .content__hero {
+    margin-left: 16px;
+    margin-top: 140px;
+  }
+  .content__hero-subtitle {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  .content__hero-title {
+    font-size: 32px;
+    height: 32px;
+    margin-bottom: 6px;
+  }
+  .content__hero-name {
+    font-size: 32px;
+    height: 33px;
+  }
+  .content__hero-link {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 0;
+  }
+  .content__footer {
+    background-color: black;
+    height: 72px;
+  }
+  .content__footer-text {
+    display: block;
+  }
+  .content__footer-text_right {
+    color: #0EC261;
+  }
+  .content__header-text {
+    display: block;
+    float: none;
+    position: absolute;
+    right: 16px;
+    margin: 0;
+  }
+  .content__header-location-text {
+    display: block;
+    float: none;
+    position: absolute;
+    right: 16px;
+    margin: 45px 0 0 0;
+  }
+  .content .content__footer-text_left {
+    float: none;
+    position: absolute;
+    right: 16px;
+    margin: 0;
+    top: 40px;
+  }
+  .content .content__footer-text_right {
+    float: none;
+    position: absolute;
+    right: 16px;
+    margin: 0;
+    top: 16px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

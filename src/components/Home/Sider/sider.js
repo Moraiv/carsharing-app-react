@@ -1,16 +1,34 @@
 import './sider.scss'
-import menuOpen from '../../../assets/menu_btn.svg'
-import menuClose from '../../../assets/menu_btn_close.svg'
-import {useState} from "react";
+import React, {useState} from "react";
 
 const Sider = () => {
     const [isOpen, setIsOpen] = useState(false)
 
+    const menuClose = () => {
+return (
+    <svg className='burger-menu__item'
+         width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path className='burger-menu__item-color_close' d="M24 8L8 24" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+        <path className='burger-menu__item-color_close' d="M8 8L24 24" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+)
+    }
+
+    const menuOpen = () => {
+        return (
+            <svg className='burger-menu__item'
+                 width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path className='burger-menu__item-color_open' d="M4 16H28" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                <path className='burger-menu__item-color_open' d="M4 8H28" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                <path className='burger-menu__item-color_open' d="M4 24H28" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+        )
+    }
     return (
         <aside className={`burger-menu ${isOpen ? '_open' : ''}`}>
-            <img src={isOpen ? menuClose : menuOpen} className='burger-menu__button' alt='menu img'
-                 onClick={() => setIsOpen(!isOpen)}>
-            </img>
+            <div className='burger-menu__buttons' onClick={() => setIsOpen(!isOpen)}>
+                {isOpen ? menuClose() : menuOpen()}
+            </div>
             {isOpen ?
                 (
                     <section className='burger-menu-container'>

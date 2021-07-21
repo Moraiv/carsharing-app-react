@@ -1,19 +1,18 @@
-.burger-menu__button {
-  position: absolute;
-  top: 4%;
-  width: 5%;
-  z-index: 2;
-  height: 35px;
-}
-.burger-menu__button:hover {
-  cursor: url("../../../assets/pointer.svg"), pointer;
-}
-
 .burger-menu {
-  display: flex;
-  width: 5%;
+  display: inline-block;
+  width: 64px;
   background-color: #111518;
   height: 100vh;
+}
+.burger-menu__buttons {
+  position: absolute;
+  top: 4.8%;
+  z-index: 9;
+  height: 25px;
+  left: 17.5px;
+}
+.burger-menu__buttons:hover {
+  cursor: url("../../../assets/pointer.svg"), pointer;
 }
 .burger-menu._open {
   width: 52.5%;
@@ -70,6 +69,53 @@
 }
 .burger-menu-icons__logo:hover path {
   fill: #0EC261;
+}
+
+@media (max-width: 1439px) {
+  .burger-menu._open {
+    width: 62%;
+    z-index: 3;
+  }
+  .burger-menu._open::before {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(21, 27, 31, 0.81);
+    z-index: 2;
+    content: "";
+  }
+}
+@media (max-width: 1023px) {
+  .burger-menu._open {
+    width: 100%;
+  }
+  .burger-menu._open::before {
+    background: rgba(21, 27, 31, 0.81);
+  }
+}
+@media (max-width: 767px) {
+  .burger-menu {
+    display: inline-block;
+    width: 40px;
+    background: none;
+    height: 40px;
+  }
+  .burger-menu._open {
+    width: 100%;
+  }
+  .burger-menu._open::before {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #111518;
+  }
+  .burger-menu__item-color_open {
+    stroke: #111518;
+  }
+  .burger-menu__buttons {
+    top: 24px;
+    left: 22px;
+  }
 }
 
 /*# sourceMappingURL=sider.css.map */

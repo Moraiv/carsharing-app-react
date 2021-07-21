@@ -1,23 +1,22 @@
-$grey: #999999;
-$black: #121212;
-$green: #0EC261;
-
-.burger-menu__button {
-  position: absolute;
-  top: 4%;
-  width: 5%;
-  z-index: 2;
-  height: 35px;
-  &:hover {
-    cursor: url("../../../assets/pointer.svg"), pointer;
-  }
-}
+@import "../../../colors/colors";
 
 .burger-menu {
-  display: flex;
-  width: 5%;
+  display: inline-block;
+  width: 64px;
   background-color: #111518;
   height: 100vh;
+
+  &__buttons {
+    position: absolute;
+    top: 4.8%;
+    z-index: 9;
+    height: 25px;
+    left: 17.5px;
+    &:hover {
+      cursor: url("../../../assets/pointer.svg"), pointer;
+    }
+  }
+
   &._open {
     width: 52.5%;
     z-index: 3;
@@ -41,10 +40,6 @@ $green: #0EC261;
   margin: 0;
 }
 
-.burger-menu-nav {
-
-}
-
 .burger-menu-nav__menu-element {
   margin-bottom: 4%;
 }
@@ -55,13 +50,16 @@ $green: #0EC261;
   font-weight: 500;
   font-size: 32px;
   font-style: normal;
+
   &:hover {
     color: $green;
   }
 }
+
 .burger-menu-icons {
   margin-top: 15%;
 }
+
 .burger-menu-icons__item {
   margin-right: 9%;
   width: 32px;
@@ -70,13 +68,71 @@ $green: #0EC261;
 }
 
 .burger-menu-icons__logo {
-  display:inline-block;
+  display: inline-block;
+
   path {
     fill: white;
   }
+
   &:hover {
     path {
       fill: $green;
     }
   }
 }
+
+@media (max-width: 1439px) {
+  .burger-menu {
+    &._open {
+      width: 62%;
+      z-index: 3;
+
+      &::before {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(21, 27, 31, 0.81);
+        z-index: 2;
+        content: '';
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .burger-menu {
+    &._open {
+      width: 100%;
+      &::before {
+        background: rgba(21, 27, 31, 0.81);
+      }
+    }
+  }
+}
+
+  @media  (max-width: 767px) {
+    .burger-menu {
+      display: inline-block;
+      width: 40px;
+      background: none;
+      height: 40px;
+
+      &._open {
+        width: 100%;
+        &::before {
+          position: absolute;
+          width: 100vw;
+          height: 100vh;
+          background-color: #111518;
+        }
+      }
+      &__item-color_open {
+        stroke: $black;
+      }
+      &__buttons {
+        top: 24px;
+        left: 22px;
+      }
+    }
+  }
+

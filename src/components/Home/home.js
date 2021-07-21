@@ -3,9 +3,6 @@ import Sider from "./Sider/sider";
 import location from '../../assets/location-icon.svg'
 import './home.scss'
 
-
-//second block --> Slider component
-
 const Home = () => {
     return (
         <>
@@ -24,7 +21,7 @@ const Home = () => {
                         <h1 className='content__hero-title'>Каршеринг</h1>
                         <h2 className='content__hero-name'>Need for drive</h2>
                         <p className='content__hero-subtitle'>Поминутная аренда авто твоего города</p>
-                        <a href="#" className="content__hero-link">Забронировать</a>
+                        <button className="content__hero-link">Забронировать</button>
                     </section>
                 </article>
                 <footer className='content__footer'>

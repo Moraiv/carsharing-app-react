@@ -1,9 +1,5 @@
-@import "./Fonts/fonts";
-
-/* colors */
-$grey: #999999;
-$black: #121212;
-$green: #0EC261;
+@import "colors/colors";
+@import "Fonts/fonts";
 
 .App {
   display: flex;
