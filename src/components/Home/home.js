@@ -2,6 +2,7 @@ import React from "react";
 import Sider from "./Sider/sider";
 import location from '../../assets/location-icon.svg'
 import './home.scss'
+import Slider from "./Slider/slider";
 
 const Home = () => {
     return (
@@ -29,7 +30,7 @@ const Home = () => {
                     <a href='#'><p className='content__footer-text content__footer-text_right'>8 (495) 234-22-44</p></a>
                 </footer>
                 <article className='content__block content__block_second'>
-ЗАГЛУШКА
+<Slider/>
                 </article>
             </main>
         </>

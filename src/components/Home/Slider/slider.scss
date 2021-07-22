@@ -121,6 +121,33 @@ margin-top: 216px;
     }
   }
 }
+.slider-text__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+}
+.slider-text-button {
+  border-radius: 4px;
+  height: 48px;
+  width: 164px;
+  border: none;
+  margin-top: 28px;
+  &__first {
+    background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
+  }
+  &__second {
+    background: linear-gradient(90deg, #132949 0%, #0C7B67 100%);
+  }
+  &__third {
+    background: linear-gradient(90deg, #493013 0%, #7B0C3B 100%);
+  }
+  &__fourth {
+    background: linear-gradient(90deg, #281349 0%, #720C7B 100%);
+  }
+
+}
 
 @media (max-width: 1439px) {
   .slider-dots {
