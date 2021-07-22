@@ -72,30 +72,6 @@
   line-height: 0.9em;
 }
 
-.slider-button {
-  border-radius: 4px;
-  width: 164px;
-  height: 48px;
-  color: #EEEEEE;
-  letter-spacing: 0.5px;
-  border: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-}
-.slider-button__first {
-  background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
-}
-.slider-button__second {
-  background: linear-gradient(90deg, #132949 0%, #0C7B67 100%);
-}
-.slider-button__third {
-  background: linear-gradient(90deg, #493013 0%, #7B0C3B 100%);
-}
-.slider-button__fourth {
-  background: linear-gradient(90deg, #281349 0%, #720C7B 100%);
-}
-
 .slider-dots {
   position: absolute;
   height: 8%;

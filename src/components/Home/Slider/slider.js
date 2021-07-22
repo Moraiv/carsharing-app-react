@@ -97,9 +97,9 @@ const Slider = () => {
 
     const renderDots = () => {
         let dots = []
-            for(let i=0; i <= 3; i++) {
+        for (let i = 0; i <= 3; i++) {
             dots.push(<span className={`slider-dots__item slider-dots__item${(i === step) ? '_active' : ''}`}/>)
-            }
+        }
         return dots
     }
 
@@ -115,7 +115,9 @@ const Slider = () => {
                 </button>
             </section>
             <section className='slider-dots'>
-                {renderDots().map((item) => {return item})}
+                {renderDots().map((item) => {
+                    return item
+                })}
             </section>
             <section className='slider-container__step-right' onClick={stepRight}>
                 <img className='slider-container__arrow' src={rightArrow} alt='arrow right'/>

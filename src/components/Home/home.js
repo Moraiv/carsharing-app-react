@@ -30,7 +30,7 @@ const Home = () => {
                     <a href='#'><p className='content__footer-text content__footer-text_right'>8 (495) 234-22-44</p></a>
                 </footer>
                 <article className='content__block content__block_second'>
-<Slider/>
+                    <Slider/>
                 </article>
             </main>
         </>

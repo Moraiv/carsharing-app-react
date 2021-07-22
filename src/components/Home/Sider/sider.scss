@@ -5,7 +5,6 @@
   width: 64px;
   background-color: #111518;
   height: 100vh;
-
   &__buttons {
     position: absolute;
     top: 4.8%;
@@ -20,7 +19,6 @@
   &._open {
     width: 52.5%;
     z-index: 3;
-
     &::before {
       position: absolute;
       width: 100vw;
@@ -69,11 +67,9 @@
 
 .burger-menu-icons__logo {
   display: inline-block;
-
   path {
     fill: white;
   }
-
   &:hover {
     path {
       fill: $green;
@@ -99,7 +95,6 @@
     &._open {
       width: 62%;
       z-index: 3;
-
       &::before {
         position: absolute;
         width: 100vw;
@@ -123,43 +118,46 @@
   }
 }
 
-  @media  (max-width: 767px) {
-    .burger-menu__language {
-      display: none;
-      &_mobile {
-        z-index: 3;
-        display: block;
-      }
-    }
-    .burger-menu-nav__link {
-      font-size: 22px;
-    }
-    .burger-menu-container {
-      top: 90px;
-      left: 28px;
-    }
-    .burger-menu {
-      display: inline-block;
-      width: 40px;
-      background: none;
-      height: 40px;
-
-      &._open {
-        width: 100%;
-        &::before {
-          position: absolute;
-          width: 100vw;
-          height: 100vh;
-          background-color: #111518;
-        }
-      }
-      &__item-color_open {
-        stroke: $black;
-      }
-      &__buttons {
-        top: 24px;
-        left: 22px;
-      }
+@media (max-width: 767px) {
+  .burger-menu__language {
+    display: none;
+    &_mobile {
+      z-index: 3;
+      display: block;
     }
   }
+
+  .burger-menu-nav__link {
+    font-size: 22px;
+  }
+
+  .burger-menu-container {
+    top: 90px;
+    left: 28px;
+  }
+
+  .burger-menu {
+    display: inline-block;
+    width: 40px;
+    background: none;
+    height: 40px;
+
+    &._open {
+      width: 100%;
+      &::before {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: #111518;
+      }
+    }
+    &__item-color_open {
+      stroke: $black;
+    }
+    &__buttons {
+      top: 24px;
+      left: 22px;
+    }
+  }
+}
 

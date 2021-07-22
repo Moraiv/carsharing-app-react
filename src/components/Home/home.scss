@@ -1,6 +1,4 @@
-$grey: #999999;
-$black: #121212;
-$green: #0EC261;
+@import '../../colors/colors';
 
 .content {
   position: absolute;
@@ -8,6 +6,11 @@ $green: #0EC261;
   height: 100%;
   margin-left: 64px;
   z-index: 1;
+
+  &:after {
+    content: url('../../assets/slider1.png') url('../../assets/slider2.png') url('../../assets/slider3.png');
+    display: none;
+  }
 }
 
 .content__block {
@@ -139,8 +142,9 @@ $green: #0EC261;
     &__block_second {
       width: 40%;
     }
+
     &__footer {
-width: 60%;
+      width: 60%;
     }
   }
 }
@@ -150,9 +154,11 @@ width: 60%;
   .content__block_second {
     display: none;
   }
+
   .content__block_first {
     width: 100%;
   }
+
   .content__footer {
     width: 100%;
   }
