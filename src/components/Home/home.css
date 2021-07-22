@@ -5,6 +5,10 @@
   margin-left: 64px;
   z-index: 1;
 }
+.content:after {
+  content: url("../../assets/slider1.png") url("../../assets/slider2.png") url("../../assets/slider3.png");
+  display: none;
+}
 
 .content__block {
   display: inline-block;
@@ -39,7 +43,7 @@
 .content__footer-text_right {
   float: right;
   margin-right: 10%;
-  color: #121212;
+  color: #111518;
 }
 .content__footer-text_right:hover {
   color: #0EC261;
@@ -82,7 +86,7 @@
 
 .content__hero-title {
   font-family: Roboto-Bold, serif;
-  color: #121212;
+  color: #111518;
   font-weight: bold;
   font-size: 70px;
   margin: 0;
