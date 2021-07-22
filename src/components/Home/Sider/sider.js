@@ -26,6 +26,7 @@ return (
     }
     return (
         <aside className={`burger-menu ${isOpen ? '_open' : ''}`}>
+            {isOpen ? (<p className='burger-menu__language burger-menu__language_mobile'>Eng</p>) : (<p className='burger-menu__language'>Eng</p>)}
             <div className='burger-menu__buttons' onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? menuClose() : menuOpen()}
             </div>

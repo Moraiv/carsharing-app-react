@@ -81,6 +81,19 @@
   }
 }
 
+.burger-menu__language {
+  position: absolute;
+  left: 21px;
+  bottom: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  color: $green;
+  margin: 0;
+  &_mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 1439px) {
   .burger-menu {
     &._open {
@@ -111,6 +124,20 @@
 }
 
   @media  (max-width: 767px) {
+    .burger-menu__language {
+      display: none;
+      &_mobile {
+        z-index: 3;
+        display: block;
+      }
+    }
+    .burger-menu-nav__link {
+      font-size: 22px;
+    }
+    .burger-menu-container {
+      top: 90px;
+      left: 28px;
+    }
     .burger-menu {
       display: inline-block;
       width: 40px;
