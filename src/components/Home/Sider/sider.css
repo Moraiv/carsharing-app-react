@@ -147,5 +147,10 @@
     left: 22px;
   }
 }
+@media (max-width: 319px) {
+  body {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=sider.css.map */

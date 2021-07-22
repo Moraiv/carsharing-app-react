@@ -129,6 +129,7 @@
 
   &:hover {
     background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+    cursor: url("../../assets/pointer.svg"), pointer;
   }
 }
 
@@ -210,9 +211,14 @@
 
     &__footer-text {
       display: block;
+      color: #EEEEEE;
 
       &_right {
         color: #0EC261;
+
+        &:hover {
+          color: $grey-light;
+        }
       }
     }
 

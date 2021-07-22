@@ -71,6 +71,13 @@
   margin-top: 3%;
   line-height: 0.9em;
 }
+.slider-text__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+}
 
 .slider-dots {
   position: absolute;
@@ -93,20 +100,16 @@
   background-color: #0EC261;
 }
 
-.slider-text__link {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 18px;
-  color: white;
-  letter-spacing: 1px;
-}
-
 .slider-text-button {
   border-radius: 4px;
   height: 48px;
   width: 164px;
   border: none;
   margin-top: 28px;
+  cursor: url("../../../assets/pointer.svg"), pointer;
+}
+.slider-text-button:hover {
+  filter: brightness(90%);
 }
 .slider-text-button__first {
   background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);

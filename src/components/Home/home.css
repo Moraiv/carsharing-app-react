@@ -125,6 +125,7 @@
 }
 .content__hero-link:hover {
   background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+  cursor: url("../../assets/pointer.svg"), pointer;
 }
 
 @media (max-width: 1439px) {
@@ -190,9 +191,13 @@
   }
   .content__footer-text {
     display: block;
+    color: #EEEEEE;
   }
   .content__footer-text_right {
     color: #0EC261;
+  }
+  .content__footer-text_right:hover {
+    color: #EEEEEE;
   }
   .content__header-text {
     display: block;

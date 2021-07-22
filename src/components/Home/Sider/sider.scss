@@ -5,12 +5,14 @@
   width: 64px;
   background-color: #111518;
   height: 100vh;
+
   &__buttons {
     position: absolute;
     top: 4.8%;
     z-index: 9;
     height: 25px;
     left: 17.5px;
+
     &:hover {
       cursor: url("../../../assets/pointer.svg"), pointer;
     }
@@ -19,6 +21,7 @@
   &._open {
     width: 52.5%;
     z-index: 3;
+
     &::before {
       position: absolute;
       width: 100vw;
@@ -67,9 +70,11 @@
 
 .burger-menu-icons__logo {
   display: inline-block;
+
   path {
     fill: white;
   }
+
   &:hover {
     path {
       fill: $green;
@@ -85,6 +90,7 @@
   font-weight: bold;
   color: $green;
   margin: 0;
+
   &_mobile {
     display: none;
   }
@@ -95,6 +101,7 @@
     &._open {
       width: 62%;
       z-index: 3;
+
       &::before {
         position: absolute;
         width: 100vw;
@@ -111,6 +118,7 @@
   .burger-menu {
     &._open {
       width: 100%;
+
       &::before {
         background: rgba(21, 27, 31, 0.81);
       }
@@ -121,6 +129,7 @@
 @media (max-width: 767px) {
   .burger-menu__language {
     display: none;
+
     &_mobile {
       z-index: 3;
       display: block;
@@ -144,20 +153,29 @@
 
     &._open {
       width: 100%;
+
       &::before {
         position: absolute;
         width: 100vw;
         height: 100vh;
-        background-color: #111518;
+        background-color: $black;
       }
     }
+
     &__item-color_open {
       stroke: $black;
     }
+
     &__buttons {
       top: 24px;
       left: 22px;
     }
+  }
+}
+
+@media (max-width: 319px) {
+  body {
+    display: none;
   }
 }
 
