@@ -12,7 +12,7 @@
   left: 17.5px;
 }
 .burger-menu__buttons:hover {
-  cursor: url("../../../assets/pointer.svg"), pointer;
+  cursor: url("../../assets/pointer.svg"), pointer;
 }
 .burger-menu._open {
   width: 52.5%;

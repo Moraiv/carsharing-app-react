@@ -1,0 +1,52 @@
+@import "../../colors/colors";
+
+.header {
+  width: 100%;
+  margin-top: 32px;
+  overflow: auto;
+  align-items: center;
+  &__text {
+    color: $green;
+    margin-left: 10%;
+    font-size: 30px;
+    font-weight: 700;
+    display: inline;
+  }
+  &__location-text {
+    color: $grey;
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+    float: right;
+    margin-right: 10%;
+  }
+  &__logo {
+    position: relative;
+    right: 5px;
+    top: 4px
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  header {
+    margin-top: 17px;
+    margin-left: 26px;
+    width: calc(100% - 26px);
+
+    &__text {
+      display: block;
+      float: none;
+      position: absolute;
+      right: 16px;
+      margin: 0;
+    }
+    &__location-text {
+      display: block;
+      float: none;
+      position: absolute;
+      right: 16px;
+      margin: 45px 0 0 0;
+    }
+  }
+}
+

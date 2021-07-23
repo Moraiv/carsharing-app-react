@@ -1,4 +1,4 @@
-@import "../../../colors/colors";
+@import "../../colors/colors";
 
 .burger-menu {
   display: inline-block;
@@ -14,7 +14,7 @@
     left: 17.5px;
 
     &:hover {
-      cursor: url("../../../assets/pointer.svg"), pointer;
+      cursor: url("../../assets/pointer.svg"), pointer;
     }
   }
 
