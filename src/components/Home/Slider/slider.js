@@ -1,45 +1,30 @@
 import './slider.scss'
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import leftArrow from '../../../assets/left-arrow.svg'
 import rightArrow from '../../../assets/right-arrow.svg'
 
 const Slider = () => {
     const [step, setStep] = useState(0)
     const [sliderClass, setSliderClass] = useState('__first')
-
-    useEffect(() => {
-        switch (step) {
-            case 0:
-                setSliderClass('__first')
-                break
-            case 1:
-                setSliderClass('__second')
-                break
-            case 2:
-                setSliderClass('__third')
-                break
-            case 3:
-                setSliderClass('__fourth')
-                break
-            default:
-                setSliderClass('__first')
-        }
-    }, [step])
+    const classSliderArray = ['__first', '__second', '__third', '__fourth']
 
     const stepLeft = () => {
         if (step > 0) {
             setStep(step - 1)
+            setSliderClass(classSliderArray[step - 1])
         } else {
             setStep(3)
+            setSliderClass(classSliderArray[3])
         }
-        setSliderClass('__first')
     }
 
     const stepRight = () => {
         if (step < 3) {
             setStep(step + 1)
+            setSliderClass(classSliderArray[step + 1])
         } else {
             setStep(0)
+            setSliderClass(classSliderArray[0])
         }
     }
 
