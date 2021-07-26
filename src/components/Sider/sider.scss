@@ -31,6 +31,25 @@
       content: '';
     }
   }
+  &__language {
+    position: absolute;
+    left: 12px;
+    bottom: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: $green;
+    margin: 0;
+    background: none;
+    border: none;
+
+    &:hover {
+      cursor: url("../../assets/pointer.svg"), pointer;
+    }
+
+    &_mobile {
+      display: none;
+    }
+  }
 }
 
 .burger-menu-container {
@@ -82,19 +101,6 @@
   }
 }
 
-.burger-menu__language {
-  position: absolute;
-  left: 21px;
-  bottom: 30px;
-  font-size: 13px;
-  font-weight: bold;
-  color: $green;
-  margin: 0;
-
-  &_mobile {
-    display: none;
-  }
-}
 
 @media (max-width: 1439px) {
   .burger-menu {
