@@ -20,7 +20,7 @@ const Home = () => {
                 </article>
                 <footer className='content__footer'>
                     <p className='content__footer-text content__footer-text_left'>© 2016-2021 «Need for drive»</p>
-                    <a href='#'><p className='content__footer-text content__footer-text_right'>8 (495) 234-22-44</p></a>
+                    <a href='tel:+74952342244'><p className='content__footer-text content__footer-text_right'>8 (495) 234-22-44</p></a>
                 </footer>
                 <article className='content__block content__block_second'>
                     <Slider/>
