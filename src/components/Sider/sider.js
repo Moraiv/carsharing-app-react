@@ -1,5 +1,6 @@
 import './sider.scss'
 import React, {useState} from "react";
+import cn from 'classnames'
 import menuOpenIcon from '../../assets/menu_btn.svg'
 import menuCloseIcon from '../../assets/menu_btn_close.svg'
 
@@ -7,7 +8,7 @@ const Sider = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <aside className={`burger-menu ${isOpen ? '_open' : ''}`}>
+        <aside className={cn('burger-menu', {'_open': isOpen})}>
             {isOpen ? (<p className='burger-menu__language burger-menu__language_mobile'>Eng</p>) : (
                 <p className='burger-menu__language'>Eng</p>)}
             <div className='burger-menu__buttons' onClick={() => setIsOpen(!isOpen)}>
