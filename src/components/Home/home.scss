@@ -19,7 +19,6 @@
     height: 8%;
     bottom: 0;
     width: 50%;
-    text-align: center;
   }
 
   &__footer-text {
@@ -30,16 +29,15 @@
     font-style: normal;
 
     &_left {
+      position: absolute;
       color: $grey;
-      float: left;
       margin-left: 4.5rem;
     }
 
     &_right {
-      float: right;
-      margin-right: 10%;
+      position: absolute;
+      right: 4.5rem;
       color: $black;
-
       &:hover {
         color: $green;
       }
@@ -47,7 +45,7 @@
   }
 
   &__hero {
-    margin-top: 125px;
+    margin-top: 180px;
     margin-left: 4.5rem;
   }
 
@@ -130,7 +128,6 @@
     margin-left: 0;
     width: 100%;
 
-
     &__hero {
       margin-left: 16px;
       margin-top: 140px;
@@ -166,7 +163,7 @@
 
     &__footer-text {
       display: block;
-      color: #EEEEEE;
+      color: $white;
 
       &_right {
         color: $green;

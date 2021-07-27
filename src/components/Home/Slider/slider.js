@@ -1,5 +1,5 @@
 import './slider.scss'
-import {classSliderArray} from '../../../store/store'
+import {classSliderArray, sliderText} from '../../../store/store'
 import React, {useState} from "react";
 import leftArrow from '../../../assets/left-arrow.svg'
 import rightArrow from '../../../assets/right-arrow.svg'
@@ -29,58 +29,6 @@ const Slider = () => {
         }
     }
 
-    const setSliderText = () => {
-        switch (step) {
-            case 0:
-                return (
-                    <>
-                        <h1 className='slider-text__title'>Бесплатная парковка</h1>
-                        <p className='slider-text__subtitle'>
-                            Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а
-                            также в аэропортах.
-                        </p>
-                    </>
-                );
-            case 1:
-                return (
-                    <>
-                        <h1 className='slider-text__title'>Страховка</h1>
-                        <p className='slider-text__subtitle'>
-                            Полная страховка автомобиля
-                        </p>
-                    </>
-                );
-            case 2:
-                return (
-                    <>
-                        <h1 className='slider-text__title'>Бензин</h1>
-                        <p className='slider-text__subtitle'>
-                            Полный бак на любой заправке города за наш счёт
-                        </p>
-                    </>
-                );
-            case 3:
-                return (
-                    <>
-                        <h1 className='slider-text__title'>Обслуживание</h1>
-                        <p className='slider-text__subtitle'>
-                            Автомобиль проходит еженедельное ТО
-                        </p>
-                    </>
-                );
-            default:
-                return (
-                    <>
-                        <h1 className='slider-text__title'>Бесплатная парковка</h1>
-                        <p className='slider-text__subtitle'>
-                            Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а
-                            также в аэропортах.
-                        </p>
-                    </>
-                );
-        }
-    }
-
     const renderDots = () => {
         let dots = []
         for (let i = 0; i <= 3; i++) {
@@ -95,7 +43,16 @@ const Slider = () => {
                 <img className='slider-container__arrow' src={leftArrow} alt='arrow left'/>
             </section>
             <section className='slider-text'>
-                {setSliderText()}
+                {sliderText.map(item => {
+                    if (item.id === step) {
+                        return (
+                    <>
+                        <h1 className='slider-text__title'>{item.title}</h1>
+                        <p className='slider-text__subtitle'>
+                            {item.subtitle}
+                        </p>
+                    </>  )}
+                })}
                 <button className={`slider-text-button slider-text-button${sliderClass}`}>
                     <a className='slider-text__link'>Подробнее</a>
                 </button>
