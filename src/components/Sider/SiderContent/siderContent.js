@@ -1,12 +1,10 @@
 import React from "react";
 import './siderContent.scss'
+import {linkText} from "../../../store/store";
 
 const SiderContent = () => {
 
-    const linkText = ['ПАРКОВКА',
-            'СТРАХОВКА',
-            'БЕНЗИН',
-            'ОБСЛУЖИВАНИЕ']
+
     const icons = [<svg className='burger-menu-icons__logo' width="32" height="32" viewBox="0 0 32 32"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fillRule="evenodd" clipRule="evenodd"
@@ -33,31 +31,19 @@ const SiderContent = () => {
         </svg>
     ]
 
-    const renderMenuLinks = () => {
-        const result = []
-        linkText.map(item => {
-            result.push((<li className='burger-menu-nav__menu-element'>
-                <a href='#' className='burger-menu-nav__link'>{item}</a>
-            </li>))
-        })
-        return result
-    }
-
-    const renderMenuIcons = () => {
-        const result = []
-        icons.map( item => {result.push(<a href='#' className='burger-menu-icons__item'>{item}</a>)})
-        return result
-    }
-
     return (
         <section className='burger-menu-container'>
             <nav className='burger-menu-nav'>
-                {renderMenuLinks().map(i => {
-                    return i
-                })}
+                {linkText.map(item => {
+                return <li className='burger-menu-nav__menu-element'>
+                    <a href='#' className='burger-menu-nav__link'>{item}</a>
+                </li>
+            })}
             </nav>
             <section className='burger-menu-icons'>
-                {renderMenuIcons().map(item => {return item})}
+                {icons.map(item => {
+                    return <a href='#' className='burger-menu-icons__item'>{item}</a>
+                })}
             </section>
         </section>
     )

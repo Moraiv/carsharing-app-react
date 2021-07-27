@@ -1,4 +1,5 @@
 import './slider.scss'
+import {classSliderArray} from '../../../store/store'
 import React, {useState} from "react";
 import leftArrow from '../../../assets/left-arrow.svg'
 import rightArrow from '../../../assets/right-arrow.svg'
@@ -6,7 +7,7 @@ import rightArrow from '../../../assets/right-arrow.svg'
 const Slider = () => {
     const [step, setStep] = useState(0)
     const [sliderClass, setSliderClass] = useState('__first')
-    const classSliderArray = ['__first', '__second', '__third', '__fourth']
+
 
     const stepLeft = () => {
         if (step > 0) {
