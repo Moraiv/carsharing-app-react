@@ -3,11 +3,11 @@ import {classSliderArray, sliderText} from '../../../store/store'
 import React, {useState} from "react";
 import leftArrow from '../../../assets/left-arrow.svg'
 import rightArrow from '../../../assets/right-arrow.svg'
+import cn from "classnames";
 
 const Slider = () => {
     const [step, setStep] = useState(0)
     const [sliderClass, setSliderClass] = useState('__first')
-
 
     const stepLeft = () => {
         if (step > 0) {
@@ -28,11 +28,10 @@ const Slider = () => {
             setSliderClass(classSliderArray[0])
         }
     }
-
     const renderDots = () => {
         let dots = []
         for (let i = 0; i <= 3; i++) {
-            dots.push(<span className={`slider-dots__item slider-dots__item${(i === step) ? '_active' : ''}`}/>)
+            dots.push(<span className={cn('slider-dots__item', {'slider-dots__item_active': i === step})}/>)
         }
         return dots
     }
@@ -43,24 +42,16 @@ const Slider = () => {
                 <img className='slider-container__arrow' src={leftArrow} alt='arrow left'/>
             </section>
             <section className='slider-text'>
-                {sliderText.map(item => {
-                    if (item.id === step) {
-                        return (
-                    <>
-                        <h1 className='slider-text__title'>{item.title}</h1>
+                        <h1 className='slider-text__title'>{sliderText[step].title}</h1>
                         <p className='slider-text__subtitle'>
-                            {item.subtitle}
+                            {sliderText[step].subtitle}
                         </p>
-                    </>  )}
-                })}
                 <button className={`slider-text-button slider-text-button${sliderClass}`}>
                     <a className='slider-text__link'>Подробнее</a>
                 </button>
             </section>
             <section className='slider-dots'>
-                {renderDots().map((item) => {
-                    return item
-                })}
+                {renderDots().map((item) => (item))}
             </section>
             <section className='slider-container__step-right' onClick={stepRight}>
                 <img className='slider-container__arrow' src={rightArrow} alt='arrow right'/>

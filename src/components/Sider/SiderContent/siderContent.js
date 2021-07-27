@@ -7,16 +7,16 @@ const SiderContent = () => {
     return (
         <section className='burger-menu-container'>
             <nav className='burger-menu-nav'>
-                {linkText.map(item => {
-                return <li className='burger-menu-nav__menu-element'>
+                {linkText.map(item => (
+                <li className='burger-menu-nav__menu-element'>
                     <a href='#' className='burger-menu-nav__link'>{item}</a>
                 </li>
-            })}
+                    ))}
             </nav>
             <section className='burger-menu-icons'>
-                {icons.map(item => {
-                    return <a href='#' className='burger-menu-icons__item'>{item}</a>
-                })}
+                {icons.map(item => (
+                    <a href='#' className='burger-menu-icons__item'>{item}</a>
+                    ))}
             </section>
         </section>
     )
