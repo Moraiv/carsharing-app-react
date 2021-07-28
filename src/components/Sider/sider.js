@@ -11,7 +11,7 @@ const Sider = () => {
     return (
         <aside className={cn('burger-menu', {'_open': isOpen})}>
             {isOpen ? (<p className='burger-menu__language burger-menu__language_mobile'>Eng</p>) : (
-                <a className='burger-menu__language'>Eng</button>)}
+                <a className='burger-menu__language'>Eng</a>)}
             <div className='burger-menu__buttons' onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? (<img src={menuCloseIcon} alt='close'/>) : (<img src={menuOpenIcon} alt='open'/>)}
             </div>
