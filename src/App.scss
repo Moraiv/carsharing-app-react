@@ -1,0 +1,26 @@
+@import "colors/colors";
+@import "assets/Fonts/fonts";
+
+.App {
+  display: flex;
+  cursor: url('./assets/cursor.svg'), default;
+}
+
+a {
+  cursor: url("./assets/pointer.svg"), pointer;
+  text-decoration: none;
+}
+
+body {
+  background-color: $white;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+
+
+
+
